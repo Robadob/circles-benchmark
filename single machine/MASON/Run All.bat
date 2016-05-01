@@ -1,4 +1,4 @@
 @echo off
-"Benchmark Entropy.bat"
-"Benchmark Neighbourhood Scale.bat"
-"Benchmark Problem Scale.bat"
+call "Benchmark Entropy.bat"
+call "Benchmark Neighbourhood Scale.bat"
+call "Benchmark Problem Scale.bat"

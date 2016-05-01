@@ -1,3 +1,1 @@
-<?xml version="1.0"?>
-<sweep runs="1">
-</sweep>
+<?xml version="1.0" ?><sweep runs="1"><parameter name="DENSITY" type="constant" constant_type="double" value="0.01"></parameter><parameter name="ATTRACTION_FORCE" type="constant" constant_type="double" value="1.0E-5"></parameter><parameter name="WIDTH" type="constant" constant_type="double" value="100.0"></parameter><parameter name="REPELLING_FORCE" type="constant" constant_type="double" value="1.0E-5"></parameter><parameter name="INTERACTION_RADIUS" type="constant" constant_type="double" value="5.0"></parameter></sweep>

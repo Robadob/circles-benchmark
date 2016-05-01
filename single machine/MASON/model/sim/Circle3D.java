@@ -52,7 +52,7 @@ public class Circle3D implements Steppable
           k = sim.ATTRACTION_FORCE;
         else
           k = -sim.REPULSION_FORCE;
-        myNewLoc.addIn(neighbourLoc.multiply(k*separation/sim.INTERACTION_RADIUS));
+        myNewLoc.addIn(locDiff.multiply(k*separation/sim.INTERACTION_RADIUS));
       }
     }
   }

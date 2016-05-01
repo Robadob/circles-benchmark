@@ -3,6 +3,9 @@
  */
 package circles3D;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import repast.simphony.context.Context;
 import repast.simphony.context.space.continuous.ContinuousSpaceFactory;
 import repast.simphony.context.space.continuous.ContinuousSpaceFactoryFinder;
@@ -20,20 +23,11 @@ import repast.simphony.space.grid.SimpleGridAdder;
  * @author rob
  *
  */
-public class ParticleBuilder implements ContextBuilder<Particle> {
+public class ParticleBuilder implements ContextBuilder {
 	
 	@Override
-	public Context build(Context<Particle> context) {
+	public Context build(Context context) {
 		context.setId ("circles3D");
-try
-{
-	throw new RuntimeException("blah");
-	
-}
-catch(Exception e)
-{
-	e.printStackTrace();
-}
 		ContinuousSpaceFactory spaceFactory =
 		ContinuousSpaceFactoryFinder . createContinuousSpaceFactory(null);
 		//Randomly scatter particles in space
@@ -45,18 +39,22 @@ catch(Exception e)
 		Grid<Particle> grid = gridFactory.createGrid("grid", context, new GridBuilderParameters<Particle>(new repast.simphony.space.grid.StickyBorders(), new SimpleGridAdder<Particle>(), true , (int)Particle.GRID_DIM , (int)Particle.GRID_DIM, (int)Particle.GRID_DIM));
 		int zombieCount = (int)(Math.pow(Particle.WIDTH, Particle.DIMENSIONS) * Particle.DENSITY);
 		//Create particles
+		List<Particle> particleList = new ArrayList<Particle>();
 		for ( int i = 0; i < zombieCount ; i ++) {
-			context.add(new Particle(space, grid));
+			particleList.add(new Particle(space, grid));
 		}
+		context.addAll(particleList);
 		//Place them into grid
-		for (Particle obj : context) {
+		for (Particle obj : particleList) {
 			NdPoint pt = space.getLocation(obj);
 			grid.moveTo(obj, 
 					(int)Math.max(0, Math.min(Particle.GRID_DIM-1, Math.floor(pt.getX()*Particle.GRID_DIM/Particle.WIDTH))), 
 					(int)Math.max(0, Math.min(Particle.GRID_DIM-1, Math.floor(pt.getY()*Particle.GRID_DIM/Particle.WIDTH))),
 					(int)Math.max(0, Math.min(Particle.GRID_DIM-1, Math.floor(pt.getZ()*Particle.GRID_DIM/Particle.WIDTH)))
 					);
+			obj.init();
 		}
+		context.add(new ParticleUpdater(particleList));
 
 		return context ;
 
