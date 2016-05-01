@@ -14,11 +14,11 @@ import repast.simphony.engine.environment.RunEnvironment;
 import repast.simphony.engine.schedule.ScheduledMethod;
 import repast.simphony.query.space.grid.GridCell;
 import repast.simphony.query.space.grid.GridCellNgh;
-/**
- * @author rob
- *
- */
 public class Particle {
+    /*
+    Simple immutable vector inner-class to represent circle location 
+    and provide math functionality (as NDPoint doesn't offer this)
+    */
 	public class Vec3 {
 
 		public final double x, y, z;

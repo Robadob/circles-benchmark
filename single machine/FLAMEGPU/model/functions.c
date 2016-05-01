@@ -22,6 +22,7 @@
 #define INTERACTION_RADIUS 5.0f
 #define ATTRACTION_FORCE 0.00001f
 #define REPULSION_FORCE 0.00001f
+#define WIDTH 300.f
 
 __FLAME_GPU_FUNC__ int inputdata(xmachine_memory_Circle* xmemory, xmachine_message_location_list* location_messages, xmachine_message_location_PBM* partition_matrix)
 {
@@ -84,11 +85,21 @@ __FLAME_GPU_FUNC__ int outputdata(xmachine_memory_Circle* xmemory, xmachine_mess
 
 __FLAME_GPU_FUNC__ int move(xmachine_memory_Circle* xmemory)
 {
-
-	xmemory->x += xmemory->fx;
-	xmemory->y += xmemory->fy;
-	xmemory->y += xmemory->fz;
+    float x, y, z;
+    //Move and Clamp
+    x = xmemory->x + xmemory->fx;
+    x = (x<0)?0:x;
+    x = (x>WIDTH)?WIDTH:x;
+    y = xmemory->y + xmemory->fy;
+    y = (y<0)?0:y;
+    y = (y>WIDTH)?WIDTH:y;
+    z = xmemory->z + xmemory->fz;
+    z = (z<0)?0:z;
+    z = (z>WIDTH)?WIDTH:z;
 	
+	xmemory->x = x;
+	xmemory->y = y;
+	xmemory->y = z;
 	return 0;
 }
 

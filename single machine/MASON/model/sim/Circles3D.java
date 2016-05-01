@@ -72,38 +72,28 @@ public class Circles3D extends SimState
       if (arg.equals("-width"))
       {
         i++;
-        Circles3D.WIDTH = Float.parseFloat(args[i]);
-        j+=2;
+        RunEnvironment.getInstance().getParameters().setValue("WIDTH", Float.parseFloat(args[i]));
       }
       else if (arg.equals("-density"))
       {
         i++;
-        Circles3D.DENSITY = Float.parseFloat(args[i]);
-        j+=2;
+        RunEnvironment.getInstance().getParameters().setValue("DENSITY", Float.parseFloat(args[i]));
       }
       else if (arg.equals("-radius"))
       {
         i++;
-        Circles3D.INTERACTION_RADIUS = Float.parseFloat(args[i]);
-        j+=2;
+        RunEnvironment.getInstance().getParameters().setValue("INTERACTION_RADIUS", Float.parseFloat(args[i]));
       }
       else if (arg.equals("-attract"))
       {
         i++;
-        Circles3D.ATTRACTION_FORCE = Float.parseFloat(args[i]);
-        j+=2;
+        RunEnvironment.getInstance().getParameters().setValue("ATTRACTION_FORCE", Float.parseFloat(args[i]));
       }
       else if (arg.equals("-repel"))
       {
         i++;
-        Circles3D.REPULSION_FORCE = Float.parseFloat(args[i]);
-        j+=2;
-      }
-      else
-      {
-        break;
-      }
-        
+        RunEnvironment.getInstance().getParameters().setValue("REPELLING_FORCE", Float.parseFloat(args[i]));
+      }        
     }
     
     //Strip parsed args
