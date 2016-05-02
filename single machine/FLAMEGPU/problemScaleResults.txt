@@ -1,14 +1,16 @@
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU>REM run me via: "Benchmark Problem Scale.bat" > scaleResults.txt 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU>REM run me via: "Benchmark Problem Scale.bat" > problemScaleResults.txt 
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU>cd executables 
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>FOR /L %A IN (300 -10 50) DO (CirclesPartitioning_%A.exe "../init/%A.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>cd problem_scale 
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>(CirclesPartitioning_300.exe "../init/300.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>FOR /L %A IN (50 10 300) DO (CirclesPartitioning_%A.exe "../../init/%A.xml" 1000 ) 
+
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_50.exe "../../init/50.xml" 1000 ) 
 FLAMEGPU Console mode
-Initial states: ../init/300.xml
-Ouput dir: ../init/
+Initial states: ../../init/50.xml
+Ouput dir: ../../init/
 64Bit System Detected
 Allocating Host and Device memeory
 Processing Simulation Step 1: Done
@@ -1011,12 +1013,12 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 153564.765625 (ms)
+Total Processing time: 1514.146484 (ms)
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>(CirclesPartitioning_290.exe "../init/290.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_60.exe "../../init/60.xml" 1000 ) 
 FLAMEGPU Console mode
-Initial states: ../init/290.xml
-Ouput dir: ../init/
+Initial states: ../../init/60.xml
+Ouput dir: ../../init/
 64Bit System Detected
 Allocating Host and Device memeory
 Processing Simulation Step 1: Done
@@ -2019,12 +2021,12 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 126844.820313 (ms)
+Total Processing time: 1646.512329 (ms)
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>(CirclesPartitioning_280.exe "../init/280.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_70.exe "../../init/70.xml" 1000 ) 
 FLAMEGPU Console mode
-Initial states: ../init/280.xml
-Ouput dir: ../init/
+Initial states: ../../init/70.xml
+Ouput dir: ../../init/
 64Bit System Detected
 Allocating Host and Device memeory
 Processing Simulation Step 1: Done
@@ -3027,12 +3029,12 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 103318.976563 (ms)
+Total Processing time: 1888.803589 (ms)
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>(CirclesPartitioning_270.exe "../init/270.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_80.exe "../../init/80.xml" 1000 ) 
 FLAMEGPU Console mode
-Initial states: ../init/270.xml
-Ouput dir: ../init/
+Initial states: ../../init/80.xml
+Ouput dir: ../../init/
 64Bit System Detected
 Allocating Host and Device memeory
 Processing Simulation Step 1: Done
@@ -4035,12 +4037,12 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 81460.984375 (ms)
+Total Processing time: 3186.385498 (ms)
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>(CirclesPartitioning_260.exe "../init/260.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_90.exe "../../init/90.xml" 1000 ) 
 FLAMEGPU Console mode
-Initial states: ../init/260.xml
-Ouput dir: ../init/
+Initial states: ../../init/90.xml
+Ouput dir: ../../init/
 64Bit System Detected
 Allocating Host and Device memeory
 Processing Simulation Step 1: Done
@@ -5043,12 +5045,12 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 63797.164063 (ms)
+Total Processing time: 5115.576172 (ms)
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>(CirclesPartitioning_250.exe "../init/250.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_100.exe "../../init/100.xml" 1000 ) 
 FLAMEGPU Console mode
-Initial states: ../init/250.xml
-Ouput dir: ../init/
+Initial states: ../../init/100.xml
+Ouput dir: ../../init/
 64Bit System Detected
 Allocating Host and Device memeory
 Processing Simulation Step 1: Done
@@ -6051,12 +6053,12 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 50756.660156 (ms)
+Total Processing time: 7674.249023 (ms)
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>(CirclesPartitioning_240.exe "../init/240.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_110.exe "../../init/110.xml" 1000 ) 
 FLAMEGPU Console mode
-Initial states: ../init/240.xml
-Ouput dir: ../init/
+Initial states: ../../init/110.xml
+Ouput dir: ../../init/
 64Bit System Detected
 Allocating Host and Device memeory
 Processing Simulation Step 1: Done
@@ -7059,12 +7061,12 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 39234.289063 (ms)
+Total Processing time: 8905.655273 (ms)
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>(CirclesPartitioning_230.exe "../init/230.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_120.exe "../../init/120.xml" 1000 ) 
 FLAMEGPU Console mode
-Initial states: ../init/230.xml
-Ouput dir: ../init/
+Initial states: ../../init/120.xml
+Ouput dir: ../../init/
 64Bit System Detected
 Allocating Host and Device memeory
 Processing Simulation Step 1: Done
@@ -8067,12 +8069,12 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 31749.654297 (ms)
+Total Processing time: 13941.623047 (ms)
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>(CirclesPartitioning_220.exe "../init/220.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_130.exe "../../init/130.xml" 1000 ) 
 FLAMEGPU Console mode
-Initial states: ../init/220.xml
-Ouput dir: ../init/
+Initial states: ../../init/130.xml
+Ouput dir: ../../init/
 64Bit System Detected
 Allocating Host and Device memeory
 Processing Simulation Step 1: Done
@@ -9075,12 +9077,12 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 26338.525391 (ms)
+Total Processing time: 18335.865234 (ms)
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>(CirclesPartitioning_210.exe "../init/210.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_140.exe "../../init/140.xml" 1000 ) 
 FLAMEGPU Console mode
-Initial states: ../init/210.xml
-Ouput dir: ../init/
+Initial states: ../../init/140.xml
+Ouput dir: ../../init/
 64Bit System Detected
 Allocating Host and Device memeory
 Processing Simulation Step 1: Done
@@ -10083,12 +10085,12 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 22069.751953 (ms)
+Total Processing time: 24529.195313 (ms)
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>(CirclesPartitioning_200.exe "../init/200.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_150.exe "../../init/150.xml" 1000 ) 
 FLAMEGPU Console mode
-Initial states: ../init/200.xml
-Ouput dir: ../init/
+Initial states: ../../init/150.xml
+Ouput dir: ../../init/
 64Bit System Detected
 Allocating Host and Device memeory
 Processing Simulation Step 1: Done
@@ -11091,12 +11093,12 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 17810.250000 (ms)
+Total Processing time: 31386.851563 (ms)
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>(CirclesPartitioning_190.exe "../init/190.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_160.exe "../../init/160.xml" 1000 ) 
 FLAMEGPU Console mode
-Initial states: ../init/190.xml
-Ouput dir: ../init/
+Initial states: ../../init/160.xml
+Ouput dir: ../../init/
 64Bit System Detected
 Allocating Host and Device memeory
 Processing Simulation Step 1: Done
@@ -12099,12 +12101,12 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 15600.598633 (ms)
+Total Processing time: 41593.425781 (ms)
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>(CirclesPartitioning_180.exe "../init/180.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_170.exe "../../init/170.xml" 1000 ) 
 FLAMEGPU Console mode
-Initial states: ../init/180.xml
-Ouput dir: ../init/
+Initial states: ../../init/170.xml
+Ouput dir: ../../init/
 64Bit System Detected
 Allocating Host and Device memeory
 Processing Simulation Step 1: Done
@@ -13107,12 +13109,12 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 13402.624023 (ms)
+Total Processing time: 51811.347656 (ms)
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>(CirclesPartitioning_170.exe "../init/170.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_180.exe "../../init/180.xml" 1000 ) 
 FLAMEGPU Console mode
-Initial states: ../init/170.xml
-Ouput dir: ../init/
+Initial states: ../../init/180.xml
+Ouput dir: ../../init/
 64Bit System Detected
 Allocating Host and Device memeory
 Processing Simulation Step 1: Done
@@ -14115,12 +14117,12 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 11461.048828 (ms)
+Total Processing time: 65555.007813 (ms)
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>(CirclesPartitioning_160.exe "../init/160.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_190.exe "../../init/190.xml" 1000 ) 
 FLAMEGPU Console mode
-Initial states: ../init/160.xml
-Ouput dir: ../init/
+Initial states: ../../init/190.xml
+Ouput dir: ../../init/
 64Bit System Detected
 Allocating Host and Device memeory
 Processing Simulation Step 1: Done
@@ -15123,12 +15125,12 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 9870.178711 (ms)
+Total Processing time: 81061.992188 (ms)
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>(CirclesPartitioning_150.exe "../init/150.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_200.exe "../../init/200.xml" 1000 ) 
 FLAMEGPU Console mode
-Initial states: ../init/150.xml
-Ouput dir: ../init/
+Initial states: ../../init/200.xml
+Ouput dir: ../../init/
 64Bit System Detected
 Allocating Host and Device memeory
 Processing Simulation Step 1: Done
@@ -16131,12 +16133,12 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 8184.621582 (ms)
+Total Processing time: 98289.351563 (ms)
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>(CirclesPartitioning_140.exe "../init/140.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_210.exe "../../init/210.xml" 1000 ) 
 FLAMEGPU Console mode
-Initial states: ../init/140.xml
-Ouput dir: ../init/
+Initial states: ../../init/210.xml
+Ouput dir: ../../init/
 64Bit System Detected
 Allocating Host and Device memeory
 Processing Simulation Step 1: Done
@@ -17139,12 +17141,12 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 6980.603516 (ms)
+Total Processing time: 120353.351563 (ms)
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>(CirclesPartitioning_130.exe "../init/130.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_220.exe "../../init/220.xml" 1000 ) 
 FLAMEGPU Console mode
-Initial states: ../init/130.xml
-Ouput dir: ../init/
+Initial states: ../../init/220.xml
+Ouput dir: ../../init/
 64Bit System Detected
 Allocating Host and Device memeory
 Processing Simulation Step 1: Done
@@ -18147,12 +18149,12 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 5797.172852 (ms)
+Total Processing time: 144469.000000 (ms)
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>(CirclesPartitioning_120.exe "../init/120.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_230.exe "../../init/230.xml" 1000 ) 
 FLAMEGPU Console mode
-Initial states: ../init/120.xml
-Ouput dir: ../init/
+Initial states: ../../init/230.xml
+Ouput dir: ../../init/
 64Bit System Detected
 Allocating Host and Device memeory
 Processing Simulation Step 1: Done
@@ -19155,12 +19157,12 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 4868.917969 (ms)
+Total Processing time: 174661.453125 (ms)
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>(CirclesPartitioning_110.exe "../init/110.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_240.exe "../../init/240.xml" 1000 ) 
 FLAMEGPU Console mode
-Initial states: ../init/110.xml
-Ouput dir: ../init/
+Initial states: ../../init/240.xml
+Ouput dir: ../../init/
 64Bit System Detected
 Allocating Host and Device memeory
 Processing Simulation Step 1: Done
@@ -20163,12 +20165,12 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 3475.092529 (ms)
+Total Processing time: 215191.031250 (ms)
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>(CirclesPartitioning_100.exe "../init/100.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_250.exe "../../init/250.xml" 1000 ) 
 FLAMEGPU Console mode
-Initial states: ../init/100.xml
-Ouput dir: ../init/
+Initial states: ../../init/250.xml
+Ouput dir: ../../init/
 64Bit System Detected
 Allocating Host and Device memeory
 Processing Simulation Step 1: Done
@@ -21171,12 +21173,12 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 3281.583252 (ms)
+Total Processing time: 273658.281250 (ms)
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>(CirclesPartitioning_90.exe "../init/90.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_260.exe "../../init/260.xml" 1000 ) 
 FLAMEGPU Console mode
-Initial states: ../init/90.xml
-Ouput dir: ../init/
+Initial states: ../../init/260.xml
+Ouput dir: ../../init/
 64Bit System Detected
 Allocating Host and Device memeory
 Processing Simulation Step 1: Done
@@ -22179,12 +22181,12 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 2522.758301 (ms)
+Total Processing time: 346103.937500 (ms)
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>(CirclesPartitioning_80.exe "../init/80.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_270.exe "../../init/270.xml" 1000 ) 
 FLAMEGPU Console mode
-Initial states: ../init/80.xml
-Ouput dir: ../init/
+Initial states: ../../init/270.xml
+Ouput dir: ../../init/
 64Bit System Detected
 Allocating Host and Device memeory
 Processing Simulation Step 1: Done
@@ -23187,12 +23189,12 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 1890.015381 (ms)
+Total Processing time: 435433.375000 (ms)
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>(CirclesPartitioning_70.exe "../init/70.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_280.exe "../../init/280.xml" 1000 ) 
 FLAMEGPU Console mode
-Initial states: ../init/70.xml
-Ouput dir: ../init/
+Initial states: ../../init/280.xml
+Ouput dir: ../../init/
 64Bit System Detected
 Allocating Host and Device memeory
 Processing Simulation Step 1: Done
@@ -24195,12 +24197,12 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 1411.346924 (ms)
+Total Processing time: 553204.875000 (ms)
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>(CirclesPartitioning_60.exe "../init/60.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_290.exe "../../init/290.xml" 1000 ) 
 FLAMEGPU Console mode
-Initial states: ../init/60.xml
-Ouput dir: ../init/
+Initial states: ../../init/290.xml
+Ouput dir: ../../init/
 64Bit System Detected
 Allocating Host and Device memeory
 Processing Simulation Step 1: Done
@@ -25203,12 +25205,12 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 1329.342651 (ms)
+Total Processing time: 708907.625000 (ms)
 
-C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>(CirclesPartitioning_50.exe "../init/50.xml" 1000 ) 
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_300.exe "../../init/300.xml" 1000 ) 
 FLAMEGPU Console mode
-Initial states: ../init/50.xml
-Ouput dir: ../init/
+Initial states: ../../init/300.xml
+Ouput dir: ../../init/
 64Bit System Detected
 Allocating Host and Device memeory
 Processing Simulation Step 1: Done
@@ -26211,6 +26213,8 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 1329.668701 (ms)
+Total Processing time: 916731.375000 (ms)
+
+C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>cd .. 
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables>cd .. 

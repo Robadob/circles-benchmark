@@ -123,7 +123,7 @@ Processing Simulation Step 97: Done
 Processing Simulation Step 98: Done
 Processing Simulation Step 99: Done
 Processing Simulation Step 100: Done
-Total Processing time: 360.535370 (ms)
+Total Processing time: 781.309448 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\entropy>(
 CirclesPartitioning_!B!.exe "../../init/neighbourhood_scale.xml" 100  
@@ -234,7 +234,7 @@ Processing Simulation Step 97: Done
 Processing Simulation Step 98: Done
 Processing Simulation Step 99: Done
 Processing Simulation Step 100: Done
-Total Processing time: 336.588165 (ms)
+Total Processing time: 763.370789 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\entropy>(
 CirclesPartitioning_!B!.exe "../../init/neighbourhood_scale.xml" 100  
@@ -345,7 +345,7 @@ Processing Simulation Step 97: Done
 Processing Simulation Step 98: Done
 Processing Simulation Step 99: Done
 Processing Simulation Step 100: Done
-Total Processing time: 322.642548 (ms)
+Total Processing time: 772.971558 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\entropy>(
 CirclesPartitioning_!B!.exe "../../init/neighbourhood_scale.xml" 100  
@@ -456,7 +456,7 @@ Processing Simulation Step 97: Done
 Processing Simulation Step 98: Done
 Processing Simulation Step 99: Done
 Processing Simulation Step 100: Done
-Total Processing time: 320.503784 (ms)
+Total Processing time: 759.330139 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\entropy>(
 CirclesPartitioning_!B!.exe "../../init/neighbourhood_scale.xml" 100  
@@ -567,7 +567,7 @@ Processing Simulation Step 97: Done
 Processing Simulation Step 98: Done
 Processing Simulation Step 99: Done
 Processing Simulation Step 100: Done
-Total Processing time: 320.391113 (ms)
+Total Processing time: 761.365051 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\entropy>(
 CirclesPartitioning_!B!.exe "../../init/neighbourhood_scale.xml" 100  
@@ -678,7 +678,7 @@ Processing Simulation Step 97: Done
 Processing Simulation Step 98: Done
 Processing Simulation Step 99: Done
 Processing Simulation Step 100: Done
-Total Processing time: 323.156403 (ms)
+Total Processing time: 777.889771 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\entropy>(
 CirclesPartitioning_!B!.exe "../../init/neighbourhood_scale.xml" 100  
@@ -789,7 +789,7 @@ Processing Simulation Step 97: Done
 Processing Simulation Step 98: Done
 Processing Simulation Step 99: Done
 Processing Simulation Step 100: Done
-Total Processing time: 324.221954 (ms)
+Total Processing time: 775.188049 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\entropy>(
 CirclesPartitioning_!B!.exe "../../init/neighbourhood_scale.xml" 100  
@@ -900,7 +900,7 @@ Processing Simulation Step 97: Done
 Processing Simulation Step 98: Done
 Processing Simulation Step 99: Done
 Processing Simulation Step 100: Done
-Total Processing time: 319.391937 (ms)
+Total Processing time: 754.684692 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\entropy>(
 CirclesPartitioning_!B!.exe "../../init/neighbourhood_scale.xml" 100  
@@ -1011,7 +1011,7 @@ Processing Simulation Step 97: Done
 Processing Simulation Step 98: Done
 Processing Simulation Step 99: Done
 Processing Simulation Step 100: Done
-Total Processing time: 319.775299 (ms)
+Total Processing time: 743.908936 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\entropy>cd .. 
 

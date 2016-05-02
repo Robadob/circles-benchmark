@@ -7,12 +7,12 @@ public class FLAMEGPUBuilder
 {
   public static void main(String[] args) throws Exception
   {
-    float WIDTH = 100.0f;
-    float DENSITY = 0.01f;
-    float INTERACTION_RADIUS = 5.0f;
-    float ATTRACTION_FORCE = 0.00001f;
-    float REPULSION_FORCE = 0.00001f;
-    final float DIMENSIONS = 3.0f;
+    double WIDTH = 100.0f;
+    double DENSITY = 0.01f;
+    double INTERACTION_RADIUS = 5.0f;
+    double ATTRACTION_FORCE = 0.00001f;
+    double REPULSION_FORCE = 0.00001f;
+    final double DIMENSIONS = 3.0f;
     File FLAME_DIR = new File("C:\\Users\\rob\\FLAMEGPU");
     File IN_DIR = new File("C:\\Users\\rob\\Desktop\\circles\\single machine\\FLAMEGPU\\model");
     String OUT_LOC = "";
@@ -23,27 +23,27 @@ public class FLAMEGPUBuilder
       if (arg.equals("-width")||arg.equals("-w"))
       {
         i++;
-        WIDTH = Float.parseFloat(args[i]);
+        WIDTH = Double.parseDouble(args[i]);
       }
       else if (arg.equals("-density")||arg.equals("-d"))
       {
         i++;
-        DENSITY = Float.parseFloat(args[i]);
+        DENSITY = Double.parseDouble(args[i]);
       }
       else if (arg.equals("-radius")||arg.equals("-rad"))
       {
         i++;
-        INTERACTION_RADIUS = Float.parseFloat(args[i]);
+        INTERACTION_RADIUS = Double.parseDouble(args[i]);
       }
       else if (arg.equals("-attract"))
       {
         i++;
-        ATTRACTION_FORCE = Float.parseFloat(args[i]);
+        ATTRACTION_FORCE = Double.parseDouble(args[i]);
       }
       else if (arg.equals("-repel"))
       {
         i++;
-        REPULSION_FORCE = Float.parseFloat(args[i]);
+        REPULSION_FORCE = Double.parseDouble(args[i]);
       }
       else if(arg.equals("-out"))
       {
@@ -95,25 +95,25 @@ public class FLAMEGPUBuilder
     
     //Perform replacement
     //width
-    XMLModelFile_template = XMLModelFile_template.replaceAll("__WIDTH__",String.format(java.util.Locale.US,"%.6f",WIDTH));
-    functions_template = functions_template.replaceAll("__WIDTH__",String.format(java.util.Locale.US,"%.6f",WIDTH));
+    XMLModelFile_template = XMLModelFile_template.replaceAll("__WIDTH__",String.format(java.util.Locale.US,"%.6f",(float)WIDTH));
+    functions_template = functions_template.replaceAll("__WIDTH__",String.format(java.util.Locale.US,"%.6f",(float)WIDTH));
     //density
-    XMLModelFile_template = XMLModelFile_template.replaceAll("__DENSITY__",String.format(java.util.Locale.US,"%.6f",DENSITY));
-    functions_template = functions_template.replaceAll("__DENSITY__",String.format(java.util.Locale.US,"%.6f",DENSITY));
+    XMLModelFile_template = XMLModelFile_template.replaceAll("__DENSITY__",String.format(java.util.Locale.US,"%.6f",(float)DENSITY));
+    functions_template = functions_template.replaceAll("__DENSITY__",String.format(java.util.Locale.US,"%.6f",(float)DENSITY));
     //radius
-    XMLModelFile_template = XMLModelFile_template.replaceAll("__RADIUS__",String.format(java.util.Locale.US,"%.6f",INTERACTION_RADIUS));
-    functions_template = functions_template.replaceAll("__RADIUS__",String.format(java.util.Locale.US,"%.6f",INTERACTION_RADIUS));
+    XMLModelFile_template = XMLModelFile_template.replaceAll("__RADIUS__",String.format(java.util.Locale.US,"%.6f",(float)INTERACTION_RADIUS));
+    functions_template = functions_template.replaceAll("__RADIUS__",String.format(java.util.Locale.US,"%.6f",(float)INTERACTION_RADIUS));
     //radiusX2
-    XMLModelFile_template = XMLModelFile_template.replaceAll("__RADIUS2__",String.format(java.util.Locale.US,"%.6f",INTERACTION_RADIUS*2));
-    functions_template = functions_template.replaceAll("__RADIUS2__",String.format(java.util.Locale.US,"%.6f",INTERACTION_RADIUS*2));
+    XMLModelFile_template = XMLModelFile_template.replaceAll("__RADIUS2__",String.format(java.util.Locale.US,"%.6f",(float)INTERACTION_RADIUS*2));
+    functions_template = functions_template.replaceAll("__RADIUS2__",String.format(java.util.Locale.US,"%.6f",(float)INTERACTION_RADIUS*2));
     //attract force
-    XMLModelFile_template = XMLModelFile_template.replaceAll("__ATTRACT__",String.format(java.util.Locale.US,"%.6f",ATTRACTION_FORCE));
-    functions_template = functions_template.replaceAll("__ATTRACT__",String.format(java.util.Locale.US,"%.6f",ATTRACTION_FORCE));
+    XMLModelFile_template = XMLModelFile_template.replaceAll("__ATTRACT__",String.format(java.util.Locale.US,"%.6f",(float)ATTRACTION_FORCE));
+    functions_template = functions_template.replaceAll("__ATTRACT__",String.format(java.util.Locale.US,"%.6f",(float)ATTRACTION_FORCE));
     //repel force
-    XMLModelFile_template = XMLModelFile_template.replaceAll("__REPEL__",String.format(java.util.Locale.US,"%.6f",REPULSION_FORCE));
-    functions_template = functions_template.replaceAll("__REPEL__",String.format(java.util.Locale.US,"%.6f",REPULSION_FORCE));
+    XMLModelFile_template = XMLModelFile_template.replaceAll("__REPEL__",String.format(java.util.Locale.US,"%.6f",(float)REPULSION_FORCE));
+    functions_template = functions_template.replaceAll("__REPEL__",String.format(java.util.Locale.US,"%.6f",(float)REPULSION_FORCE));
     //AGENT POP
-    final int AGENT_COUNT = (int)Math.floor(Math.pow(WIDTH,DIMENSIONS)*DENSITY);
+    final int AGENT_COUNT = (int)(Math.pow(WIDTH,DIMENSIONS)*DENSITY);
     XMLModelFile_template = XMLModelFile_template.replaceAll("__AGENT_COUNT__",""+AGENT_COUNT);
     functions_template = functions_template.replaceAll("__AGENT_COUNT__",""+AGENT_COUNT);
     
@@ -166,7 +166,7 @@ while ((s = stdError.readLine()) != null) {
       Paths.get(OUT_LOC),
       StandardCopyOption.REPLACE_EXISTING
     );
-    System.out.println("Width: "+WIDTH+" Radius: "+INTERACTION_RADIUS+" Density: "+DENSITY+" built successfully.");
+    System.out.println("Width: "+WIDTH+" Radius: "+INTERACTION_RADIUS+" Density: "+DENSITY+" Agents: "+AGENT_COUNT+ " built successfully.");
   }
   public static void printUsage()
   {

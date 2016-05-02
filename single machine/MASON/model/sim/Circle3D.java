@@ -33,13 +33,14 @@ public class Circle3D implements Steppable
 	  //Iterate all particles within the interaction radius x2
     Bag n = sim.environment.getNeighborsWithinDistance(location, sim.INTERACTION_RADIUS*2);
     int bagSize = n.size();
-    int j=0;
     for(int i = 0;i<bagSize;i++)
     {
       Circle3D neighbr = ((Circle3D)n.objs[i]);
       if(neighbr==null)
       {
+        /*System.out.println("null garbage");*/
         //At high neighbourhood volumes bags often contain a single null value
+        //No longer able to reproduce this :/
         continue;        
       }
       neighbourLoc = neighbr.getLocation();
