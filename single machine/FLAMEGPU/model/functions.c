@@ -19,10 +19,10 @@
 
 #include "header.h"
 
-#define INTERACTION_RADIUS 5.0f
-#define ATTRACTION_FORCE 0.00001f
-#define REPULSION_FORCE 0.00001f
-#define WIDTH 300.f
+#define INTERACTION_RADIUS __RADIUS__f
+#define ATTRACTION_FORCE __ATTRACT__f
+#define REPULSION_FORCE __REPEL__f
+#define WIDTH __WIDTH__f
 
 __FLAME_GPU_FUNC__ int inputdata(xmachine_memory_Circle* xmemory, xmachine_message_location_list* location_messages, xmachine_message_location_PBM* partition_matrix)
 {

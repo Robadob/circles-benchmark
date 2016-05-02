@@ -1,0 +1,2 @@
+call "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\Tools\VsDevCmd.bat"
+MsBuild.exe "C:\Users\rob\FLAMEGPU\examples\CirclesPartitioning_float\CirclesPartitioning_float.sln" /t:Rebuild /p:Configuration=Release_Console /property:Platform=x64
