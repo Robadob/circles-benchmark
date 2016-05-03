@@ -59,9 +59,9 @@ public class Circles3D extends SimState
         };
     }
     //Add the location calculation sequence
-    schedule.scheduleRepeating(Schedule.EPOCH,0,new ParallelSequence(sCalc),1);    
+    schedule.scheduleRepeating(Schedule.EPOCH,0,new ParallelSequence(sCalc, ParallelSequence.CPUS),1);    
     //Add the location update sequence AFTER the calculation sequence
-    schedule.scheduleRepeating(Schedule.EPOCH,1,new ParallelSequence(sUpdate),1);
+    schedule.scheduleRepeating(Schedule.EPOCH,1,new ParallelSequence(sUpdate, ParallelSequence.CPUS),1);
   }
   public static void main(String[] args)
   {
