@@ -37,7 +37,7 @@ public class ParticleBuilder implements ContextBuilder {
 		//Calculate grid dimensions
 		GridFactory gridFactory = GridFactoryFinder.createGridFactory(null);
 		Grid<Particle> grid = gridFactory.createGrid("grid", context, new GridBuilderParameters<Particle>(new repast.simphony.space.grid.StickyBorders(), new SimpleGridAdder<Particle>(), true , (int)Particle.GRID_DIM , (int)Particle.GRID_DIM, (int)Particle.GRID_DIM));
-		int zombieCount = (int)(Math.pow(Particle.WIDTH, Particle.DIMENSIONS) * Particle.DENSITY);
+		int zombieCount = (int)(Math.pow(Particle.WIDTH, Particle.DIMENSIONS) * (double)Particle.DENSITY);
 		//Create particles
 		List<Particle> particleList = new ArrayList<Particle>();
 		for ( int i = 0; i < zombieCount ; i ++) {
