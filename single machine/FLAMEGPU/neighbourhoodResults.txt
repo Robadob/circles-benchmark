@@ -1013,7 +1013,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 24322.919922 (ms)
+Total Processing time: 32932.558594 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\neighbourhood_scale>(CirclesPartitioning_14.exe "../../init/neighbourhood_scale.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -2021,7 +2021,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 23428.734375 (ms)
+Total Processing time: 32146.458984 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\neighbourhood_scale>(CirclesPartitioning_13.exe "../../init/neighbourhood_scale.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -3029,7 +3029,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 23299.552734 (ms)
+Total Processing time: 31797.232422 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\neighbourhood_scale>(CirclesPartitioning_12.exe "../../init/neighbourhood_scale.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -4037,7 +4037,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 18357.056641 (ms)
+Total Processing time: 18231.662109 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\neighbourhood_scale>(CirclesPartitioning_11.exe "../../init/neighbourhood_scale.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -5045,7 +5045,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 18544.294922 (ms)
+Total Processing time: 18125.007813 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\neighbourhood_scale>(CirclesPartitioning_10.exe "../../init/neighbourhood_scale.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -6053,7 +6053,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 19406.080078 (ms)
+Total Processing time: 17865.310547 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\neighbourhood_scale>(CirclesPartitioning_9.exe "../../init/neighbourhood_scale.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -7061,7 +7061,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 15660.400391 (ms)
+Total Processing time: 10640.772461 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\neighbourhood_scale>(CirclesPartitioning_8.exe "../../init/neighbourhood_scale.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -8069,7 +8069,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 12476.560547 (ms)
+Total Processing time: 7464.260742 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\neighbourhood_scale>(CirclesPartitioning_7.exe "../../init/neighbourhood_scale.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -9077,7 +9077,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 10513.123047 (ms)
+Total Processing time: 5518.963379 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\neighbourhood_scale>(CirclesPartitioning_6.exe "../../init/neighbourhood_scale.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -10085,7 +10085,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 9006.554688 (ms)
+Total Processing time: 4035.855225 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\neighbourhood_scale>(CirclesPartitioning_5.exe "../../init/neighbourhood_scale.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -11093,7 +11093,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 7713.648438 (ms)
+Total Processing time: 3499.881836 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\neighbourhood_scale>(CirclesPartitioning_4.exe "../../init/neighbourhood_scale.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -12101,7 +12101,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 5312.833008 (ms)
+Total Processing time: 2361.078613 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\neighbourhood_scale>(CirclesPartitioning_3.exe "../../init/neighbourhood_scale.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -13109,7 +13109,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 3351.190918 (ms)
+Total Processing time: 1662.371460 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\neighbourhood_scale>(CirclesPartitioning_2.exe "../../init/neighbourhood_scale.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -14117,7 +14117,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 2078.756592 (ms)
+Total Processing time: 1446.388062 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\neighbourhood_scale>(CirclesPartitioning_1.exe "../../init/neighbourhood_scale.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -15125,7 +15125,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 1781.732910 (ms)
+Total Processing time: 1615.788696 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\neighbourhood_scale>cd .. 
 

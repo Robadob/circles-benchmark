@@ -65,7 +65,7 @@ __FLAME_GPU_FUNC__ int inputdata(xmachine_memory_Circle* xmemory, xmachine_messa
     }
     xmemory->fx = fx;
     xmemory->fy = fy;
-    xmemory->fy = fz;
+    xmemory->fz = fz;
 	
 	return 0;
 }
@@ -99,7 +99,7 @@ __FLAME_GPU_FUNC__ int move(xmachine_memory_Circle* xmemory)
 	
 	xmemory->x = x;
 	xmemory->y = y;
-	xmemory->y = z;
+	xmemory->z = z;
 	return 0;
 }
 

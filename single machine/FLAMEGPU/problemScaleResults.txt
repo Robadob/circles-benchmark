@@ -1013,7 +1013,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 1514.146484 (ms)
+Total Processing time: 1336.782959 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_60.exe "../../init/60.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -2021,7 +2021,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 1646.512329 (ms)
+Total Processing time: 1431.202393 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_70.exe "../../init/70.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -3029,7 +3029,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 1888.803589 (ms)
+Total Processing time: 1575.681641 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_80.exe "../../init/80.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -4037,7 +4037,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 3186.385498 (ms)
+Total Processing time: 2013.857910 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_90.exe "../../init/90.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -5045,7 +5045,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 5115.576172 (ms)
+Total Processing time: 2675.606934 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_100.exe "../../init/100.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -6053,7 +6053,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 7674.249023 (ms)
+Total Processing time: 3241.382813 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_110.exe "../../init/110.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -7061,7 +7061,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 8905.655273 (ms)
+Total Processing time: 3536.499756 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_120.exe "../../init/120.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -8069,7 +8069,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 13941.623047 (ms)
+Total Processing time: 4869.334473 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_130.exe "../../init/130.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -9077,7 +9077,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 18335.865234 (ms)
+Total Processing time: 5800.999023 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_140.exe "../../init/140.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -10085,7 +10085,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 24529.195313 (ms)
+Total Processing time: 7056.725098 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_150.exe "../../init/150.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -11093,7 +11093,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 31386.851563 (ms)
+Total Processing time: 8202.692383 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_160.exe "../../init/160.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -12101,7 +12101,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 41593.425781 (ms)
+Total Processing time: 9876.556641 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_170.exe "../../init/170.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -13109,7 +13109,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 51811.347656 (ms)
+Total Processing time: 11509.202148 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_180.exe "../../init/180.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -14117,7 +14117,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 65555.007813 (ms)
+Total Processing time: 13494.845703 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_190.exe "../../init/190.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -15125,7 +15125,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 81061.992188 (ms)
+Total Processing time: 15543.208008 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_200.exe "../../init/200.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -16133,7 +16133,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 98289.351563 (ms)
+Total Processing time: 17913.443359 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_210.exe "../../init/210.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -17141,7 +17141,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 120353.351563 (ms)
+Total Processing time: 22693.281250 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_220.exe "../../init/220.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -18149,7 +18149,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 144469.000000 (ms)
+Total Processing time: 25921.253906 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_230.exe "../../init/230.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -19157,7 +19157,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 174661.453125 (ms)
+Total Processing time: 30810.447266 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_240.exe "../../init/240.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -20165,7 +20165,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 215191.031250 (ms)
+Total Processing time: 39148.867188 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_250.exe "../../init/250.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -21173,7 +21173,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 273658.281250 (ms)
+Total Processing time: 51166.761719 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_260.exe "../../init/260.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -22181,7 +22181,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 346103.937500 (ms)
+Total Processing time: 64559.031250 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_270.exe "../../init/270.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -23189,7 +23189,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 435433.375000 (ms)
+Total Processing time: 83642.929688 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_280.exe "../../init/280.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -24197,7 +24197,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 553204.875000 (ms)
+Total Processing time: 106489.625000 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_290.exe "../../init/290.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -25205,7 +25205,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 708907.625000 (ms)
+Total Processing time: 128842.351563 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>(CirclesPartitioning_300.exe "../../init/300.xml" 1000 ) 
 FLAMEGPU Console mode
@@ -26213,7 +26213,7 @@ Processing Simulation Step 997: Done
 Processing Simulation Step 998: Done
 Processing Simulation Step 999: Done
 Processing Simulation Step 1000: Done
-Total Processing time: 916731.375000 (ms)
+Total Processing time: 157709.703125 (ms)
 
 C:\Users\rob\Desktop\circles\single machine\FLAMEGPU\executables\problem_scale>cd .. 
 
