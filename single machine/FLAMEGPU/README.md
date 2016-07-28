@@ -1,9 +1,9 @@
 #Circles Benchmark
 ##FLAMEGPU Guide
 
-The results provided within were obtained using [this](https://github.com/FLAMEGPU/FLAMEGPU/tree/c2b8f7d16c2b03038a9a66f0c391db55c0f39560) FLAMEGPU state (it's a specific commit on master, currently has no formal version number).
+The results provided within were obtained using [this](https://github.com/FLAMEGPU/FLAMEGPU/tree/c2b8f7d16c2b03038a9a66f0c391db55c0f39560) FLAMEGPU state (it's a specific commit on master, currently has no formal version number). Additionally a manual patch as described [here](https://github.com/FLAMEGPU/FLAMEGPU/issues/13) was applied in order to correct double spatial partitioning handling.
 
-In order to execute these benchmarks you require a CUDA capable GPU. It's also likely that you will require the CUDA toolkit (FLAMEGPU currently builds with v7.0) and Visual Studio 2012 or higher, so that you can build FLAMEGPU yourself.
+In order to execute these benchmarks you require a CUDA capable GPU. It's also likely that you will require the CUDA toolkit (FLAMEGPU currently builds with v7.0) and Visual Studio 2012 or higher, so that you can build FLAMEGPU yourself. The batch files provided are configured to run on the CUDA device of index 1 as configured on the machine used for testing, if you only have a single CUDA device you will need to change this parameter to 0.
 
 Provided are an application for generating initial state files (within the `init` directory) and the initial states used to provide the results. Additionally the executables directory contains all the builds of FLAMEGPU used to produce the results.
 
