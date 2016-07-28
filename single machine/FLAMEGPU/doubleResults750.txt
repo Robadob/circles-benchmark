@@ -1,0 +1,350 @@
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 1057.140869 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 1059.069336 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 1027.321289 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 1106.787231 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 1054.115845 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 1693.493530 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 1921.939697 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 4290.176270 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 2781.854248 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 278735.781250 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 271255.312500 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 258922.250000 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 247811.984375 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 175383.453125 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 102802.898438 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 70241.640625 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 45635.339844 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 31467.615234 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 20434.548828 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 12344.437500 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 6332.704590 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 3281.713623 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 1806.976318 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 1711.685913 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/50.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 3680.895996 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/60.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 3724.132568 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/70.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 6428.233398 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/80.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 6819.176758 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/90.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 11062.905273 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 12313.953125 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/110.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 17130.263672 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/120.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 21320.775391 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/130.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 25541.578125 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/140.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 31611.371094 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/150.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 38433.937500 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/160.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 44132.148438 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/170.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 53979.570313 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/180.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 63778.761719 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/190.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 73833.773438 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/200.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 86527.421875 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/210.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 99110.820313 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/220.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 113978.140625 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/230.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 128993.906250 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/240.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 145591.781250 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/250.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 164245.500000 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/260.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 185181.781250 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/270.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 209093.625000 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/280.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 231741.828125 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/290.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 258127.187500 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/300.xml
+Ouput dir: ../../../init/
+Simulation requires full precision double values
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 285747.531250 (ms)

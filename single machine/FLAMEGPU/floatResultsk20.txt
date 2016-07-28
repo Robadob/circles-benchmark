@@ -1,0 +1,300 @@
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 175.942535 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 176.562943 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 177.849472 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 186.761307 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 181.753372 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 239.187546 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 284.451782 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 521.759277 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 379.577972 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 20900.089844 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 21461.410156 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 22072.150391 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 19976.326172 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 16127.109375 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 11001.244141 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 6366.881348 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 4444.253418 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 3385.419434 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 2646.881592 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 2018.951904 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 1128.167480 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 716.065308 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 572.412292 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 617.158142 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/50.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 1669.247803 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/60.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 1671.113159 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/70.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 1777.422729 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/80.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 1883.716553 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/90.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 1867.869385 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/100.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 2017.211182 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/110.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 2028.420410 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/120.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 3566.117188 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/130.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 3723.660400 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/140.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 5112.070801 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/150.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 5523.946289 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/160.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 6905.886230 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/170.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 7326.760742 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/180.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 9070.822266 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/190.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 10605.266602 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/200.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 12796.352539 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/210.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 16144.818359 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/220.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 22116.818359 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/230.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 30878.207031 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/240.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 40101.242188 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/250.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 50069.660156 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/260.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 63042.109375 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/270.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 79041.390625 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/280.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 95883.804688 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/290.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 112876.390625 (ms)
+FLAMEGPU Console mode
+Initial states: ../../../init/300.xml
+Ouput dir: ../../../init/
+64Bit System Detected
+Allocating Host and Device memeory
+Total Processing time: 129490.359375 (ms)
