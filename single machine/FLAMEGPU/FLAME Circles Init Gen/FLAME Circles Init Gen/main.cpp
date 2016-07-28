@@ -20,6 +20,7 @@ int main(int argc, char**argv)
 	unsigned int width = 0;
 	unsigned int count = 0;
 	std::string outFile = std::string("");
+	std::string outFile2 = std::string("");
 	for (int i = 0; i < argc; i++)
 	{
 		std::string arg(argv[i]);
@@ -34,6 +35,10 @@ int main(int argc, char**argv)
 		}else if (arg.compare("-f") == 0)
 		{
 			outFile = std::string(argv[++i]);
+		}
+		else if (arg.compare("-f2") == 0)
+		{
+			outFile2 = std::string(argv[++i]);
 		}
 	}
 	if (width == 0)
@@ -69,14 +74,25 @@ int main(int argc, char**argv)
 	char *zero_pt_zero_str = doc.allocate_string("0.0");
 	//temp stuff
 	char buffer[1024];
+	float fBuffer[3];
 	std::mt19937 rng((unsigned int)std::chrono::system_clock::now().time_since_epoch().count());  // mt19937 is a standard mersenne_twister_engine
-	std::uniform_real_distribution<float> rng_float(0.0, width);
+	std::uniform_real_distribution<float> rng_float(0.0, width-1);
 	//states
 	rapidxml::xml_node<> *states_node = doc.allocate_node(rapidxml::node_element, states_node_str);
 	doc.append_node(states_node);
 	//itno
 	rapidxml::xml_node<> *itno_node = doc.allocate_node(rapidxml::node_element, itno_node_str, doc.allocate_string("0"));
 	states_node->append_node(itno_node);
+	///None-xml file
+	std::ofstream oFile;
+	if (!outFile2.empty())
+	{
+		oFile.open(outFile2);
+		if (oFile.is_open())
+		{
+			oFile << count << "\n";
+		}
+	}
 	//xagent each
 	for (unsigned int i = 0; i < count;i++)
 	{
@@ -88,16 +104,19 @@ int main(int argc, char**argv)
 			sprintf(buffer, "%d", i);
 			rapidxml::xml_node<> *id_node = doc.allocate_node(rapidxml::node_element, id_node_str, doc.allocate_string(buffer));
 			xagent_node->append_node(id_node);
-
-			sprintf(buffer, "%f", rng_float(rng));
+			
+			fBuffer[0] = rng_float(rng);
+			sprintf(buffer, "%.9g", fBuffer[0]);
 			rapidxml::xml_node<> *x_node = doc.allocate_node(rapidxml::node_element, x_node_str, doc.allocate_string(buffer));
 			xagent_node->append_node(x_node);
 
-			sprintf(buffer, "%f", rng_float(rng));
+			fBuffer[1] = rng_float(rng);
+			sprintf(buffer, "%.9g", fBuffer[1]);
 			rapidxml::xml_node<> *y_node = doc.allocate_node(rapidxml::node_element, y_node_str, doc.allocate_string(buffer));
 			xagent_node->append_node(y_node);
 
-			sprintf(buffer, "%f", rng_float(rng));
+			fBuffer[2] = rng_float(rng);
+			sprintf(buffer, "%.9g", fBuffer[2]);
 			rapidxml::xml_node<> *z_node = doc.allocate_node(rapidxml::node_element, z_node_str, doc.allocate_string(buffer));
 			xagent_node->append_node(z_node);
 
@@ -109,15 +128,25 @@ int main(int argc, char**argv)
 
 			rapidxml::xml_node<> *fz_node = doc.allocate_node(rapidxml::node_element, fz_node_str, zero_pt_zero_str);
 			xagent_node->append_node(fz_node);
+
+			///None xml output
+			if (oFile.is_open())
+			{
+				sprintf(&buffer[0], "%.9g,%.9g,%.9g\n", fBuffer[0], fBuffer[1], fBuffer[2]);
+				oFile << buffer;
+			}
 		}
 		states_node->append_node(xagent_node);
 	}
-	
-	//Actually do the output
-	std::ofstream f;
-	f.open(outFile);
+	//Close none xml stream
+	if (oFile.is_open())
+	{
+		oFile.close();
+	}
+	//Actually do the xml output
+	oFile.open(outFile);
 
-	f << doc;
+	oFile << doc;
 
-	f.close();
+	oFile.close();
 }
