@@ -1,0 +1,3 @@
+The `simulation.xslt` template in this folder can replace the one within FLAME. It adds additional code to the cleanup method that will 3D dimensional agent location messages to the file `flameagents.txt`. The format is simply the number of agents on the first line, followed by a comma delimited vec3 on each subsequent line.
+
+As such this template won't compile correctly with models containing differently named agents, and the additional IO overhead is worth avoiding outside of validation scenarios.

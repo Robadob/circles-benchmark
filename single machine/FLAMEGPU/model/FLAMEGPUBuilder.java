@@ -13,8 +13,9 @@ public class FLAMEGPUBuilder
     double ATTRACTION_FORCE = 0.00001f;
     double REPULSION_FORCE = 0.00001f;
     final double DIMENSIONS = 3.0f;
+    boolean dbl = false;
     File FLAME_DIR = new File("C:\\Users\\rob\\FLAMEGPU");
-    File IN_DIR = new File("C:\\Users\\rob\\Desktop\\circles\\single machine\\FLAMEGPU\\model");
+    File IN_DIR = new File("C:\\Users\\rob\\circles\\single machine\\FLAMEGPU\\model\\float");
     String OUT_LOC = "";
     //Parse input args
     for(int i=0;i<args.length;i++)
@@ -61,6 +62,10 @@ public class FLAMEGPUBuilder
           System.exit(1);
         }
       }
+      else if(arg.equals("-double"))
+      {
+        IN_DIR = new File("C:\\Users\\rob\\circles\\single machine\\FLAMEGPU\\model\\double");
+      }
       else if(arg.equals("-flame"))
       {
         i++;
@@ -92,10 +97,9 @@ public class FLAMEGPUBuilder
     XMLModelFile_template = new String(encoded, Charset.defaultCharset());
     encoded = Files.readAllBytes(Paths.get(IN_DIR.getAbsolutePath(),"functions.c"));
     functions_template = new String(encoded, Charset.defaultCharset());
-    
     //Perform replacement
     //width
-    XMLModelFile_template = XMLModelFile_template.replaceAll("__WIDTH__",String.format(java.util.Locale.US,"%.6f",(float)WIDTH));
+    XMLModelFile_template = XMLModelFile_template.replaceAll("__WIDTH__",String.format(java.util.Locale.US,"%.6f",(float)(INTERACTION_RADIUS*2*Math.ceil(WIDTH/(INTERACTION_RADIUS*2)))));//Round up width to the nearest multiple of 2*Radius to prevent flame effectively reducing the rad
     functions_template = functions_template.replaceAll("__WIDTH__",String.format(java.util.Locale.US,"%.6f",(float)WIDTH));
     //density
     XMLModelFile_template = XMLModelFile_template.replaceAll("__DENSITY__",String.format(java.util.Locale.US,"%.6f",(float)DENSITY));
@@ -113,7 +117,7 @@ public class FLAMEGPUBuilder
     XMLModelFile_template = XMLModelFile_template.replaceAll("__REPEL__",String.format(java.util.Locale.US,"%.6f",(float)REPULSION_FORCE));
     functions_template = functions_template.replaceAll("__REPEL__",String.format(java.util.Locale.US,"%.6f",(float)REPULSION_FORCE));
     //AGENT POP
-    final int AGENT_COUNT = (int)(Math.pow(WIDTH,DIMENSIONS)*DENSITY);
+    final int AGENT_COUNT = (int)Math.round(Math.pow(WIDTH,DIMENSIONS)*DENSITY);
     XMLModelFile_template = XMLModelFile_template.replaceAll("__AGENT_COUNT__",""+AGENT_COUNT);
     functions_template = functions_template.replaceAll("__AGENT_COUNT__",""+AGENT_COUNT);
     
