@@ -1,6 +1,8 @@
 package circles3D;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.UnsupportedEncodingException;
 //Logging
 import java.nio.file.*;
 
@@ -23,7 +25,7 @@ import simphony.util.messages.MessageCenter;
 public class CirclesBatchRunner extends AbstractRunner {
 
 	public static void main(String[] args){
-
+		repast.simphony.random.RandomHelper.setSeed(0);
 		File file = new File("Circles3D.rs/"); // the scenario dir
 		if(!file.exists())
 		{
@@ -47,18 +49,19 @@ public class CirclesBatchRunner extends AbstractRunner {
             {
               i++;
               Particle.WIDTH=Float.parseFloat(args[i]);
-              Particle.GRID_DIM = (int)Math.ceil(Particle.WIDTH/Particle.INTERACTION_RADIUS);
+              Particle.GRID_DIM = (int)Math.ceil(Particle.WIDTH/Particle.INTERACTION_RADIUS2);
             }
             else if (arg.equals("-density"))
             {
-              i++;
-              Particle.DENSITY=Float.parseFloat(args[i]);
+            	i++;
+            	Particle.DENSITY=Float.parseFloat(args[i]);
             }
             else if (arg.equals("-radius"))
             {
-              i++;
-              Particle.INTERACTION_RADIUS=Float.parseFloat(args[i]);
-              Particle.GRID_DIM = (int)Math.ceil(Particle.WIDTH/Particle.INTERACTION_RADIUS);
+            	i++;
+            	Particle.INTERACTION_RADIUS=Float.parseFloat(args[i]);
+            	Particle.INTERACTION_RADIUS2=2*Particle.INTERACTION_RADIUS;
+            	Particle.GRID_DIM = (int)Math.ceil(Particle.WIDTH/Particle.INTERACTION_RADIUS2);
             }
             else if (arg.equals("-attract"))
             {
@@ -67,18 +70,28 @@ public class CirclesBatchRunner extends AbstractRunner {
             }
             else if (arg.equals("-repel"))
             {
-              i++;
-              Particle.REPELLING_FORCE=Float.parseFloat(args[i]);
+            	i++;
+              	Particle.REPELLING_FORCE=Float.parseFloat(args[i]);
             }  
             else if (arg.equals("-file")||arg.equals("-f")||arg.equals("-out"))
             {
-              i++;
-              logFile = args[i];
+            	i++;
+              	logFile = args[i];
             }
             else if(arg.equals("-for"))
             {
                 i++;
                 ITERATIONS = Integer.parseInt(args[i]);
+            }
+            else if (arg.equals("-load"))
+            {
+            	i++;
+            	Particle.LOAD_AGENTS = true;
+            	Particle.AGENTS_PATH = args[i];
+            }
+            else if (arg.equals("-agents"))
+            {
+            	Particle.LOG_AGENTS = true;
             }
         }
         
@@ -93,12 +106,13 @@ public class CirclesBatchRunner extends AbstractRunner {
 		}
         //Log the end time
         long endTime = System.currentTimeMillis();
-        //
+        runner.setFinishing(true);
+        runner.schedule.executeEndActions();
         logTime(endTime-startTime, logFile);
 		runner.stop();          // execute any actions scheduled at run end
 		runner.cleanUpRun();
 		runner.cleanUpBatch();    // run after all runs complete
-		System.exit(0);
+		System.exit(0);		
 	}
 	public static void logTime(long millisOccured, String file)
 	{
@@ -109,7 +123,7 @@ public class CirclesBatchRunner extends AbstractRunner {
 	        +String.format(java.util.Locale.US,"%.6f", Particle.INTERACTION_RADIUS)+","
 	        +String.format(java.util.Locale.US,"%.6f", Particle.ATTRACTION_FORCE)+","
 	        +String.format(java.util.Locale.US,"%.6f", Particle.REPELLING_FORCE)+","
-	        +(int)(Math.pow(Particle.WIDTH, Particle.DIMENSIONS) * Particle.DENSITY)+","
+	        +(int)Math.round(Math.pow(Particle.WIDTH, Particle.DIMENSIONS) * Particle.DENSITY)+","
 	        +String.format(java.util.Locale.US,"%.6f",millisOccured/1000.0f)+",s\r\n").getBytes(), StandardOpenOption.CREATE, StandardOpenOption.APPEND);
 	    }catch (java.io.IOException e) {
 	      System.err.println(e.toString());
@@ -150,11 +164,12 @@ public class CirclesBatchRunner extends AbstractRunner {
 	public void runInitialize(){
         DefaultParameters defaultParameters = new DefaultParameters(); 
         defaultParameters.addParameter("randomSeed", "Default Random Seed", Number.class, (int)System.currentTimeMillis(), false); 
-        defaultParameters.addParameter("WIDTH", "WIDTH", Double.class, 100.0, false); 
-        defaultParameters.addParameter("DENSITY", "DENSITY", Double.class, 0.01, false); 
-        defaultParameters.addParameter("INTERACTION_RADIUS", "INTERACTION_RADIUS", Double.class, 5.0, false); 
-        defaultParameters.addParameter("ATTRACTION_FORCE", "ATTRACTION_FORCE", Double.class, 0.00001, false); 
-        defaultParameters.addParameter("REPELLING_FORCE", "REPELLING_FORCE", Double.class, 0.00001, false); 
+        defaultParameters.addParameter("WIDTH", "WIDTH", Double.class, Particle.WIDTH, false); 
+        defaultParameters.addParameter("DENSITY", "DENSITY", Double.class, Particle.DENSITY, false); 
+        defaultParameters.addParameter("INTERACTION_RADIUS", "INTERACTION_RADIUS", Double.class, Particle.INTERACTION_RADIUS, false); 
+        defaultParameters.addParameter("INTERACTION_RADIUS2", "INTERACTION_RADIUS2", Double.class, Particle.INTERACTION_RADIUS2, false); 
+        defaultParameters.addParameter("ATTRACTION_FORCE", "ATTRACTION_FORCE", Double.class, Particle.ATTRACTION_FORCE, false); 
+        defaultParameters.addParameter("REPELLING_FORCE", "REPELLING_FORCE", Double.class, Particle.REPELLING_FORCE, false); 
         controller.runParameterSetters(defaultParameters); 
     controller.runInitialize(defaultParameters);
 		schedule = RunState.getInstance().getScheduleRegistry().getModelSchedule();

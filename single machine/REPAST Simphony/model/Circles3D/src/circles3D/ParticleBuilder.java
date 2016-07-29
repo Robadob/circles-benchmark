@@ -20,24 +20,30 @@ import repast.simphony.space.grid.GridBuilderParameters;
 import repast.simphony.space.grid.SimpleGridAdder;
 
 /**
- * @author rob
- *
+ * This class creates particles initial states and adds them to the continuous space and grid data-structures
  */
 public class ParticleBuilder implements ContextBuilder {
-	
-	@Override
+
 	public Context build(Context context) {
 		context.setId ("circles3D");
 		ContinuousSpaceFactory spaceFactory =
 		ContinuousSpaceFactoryFinder . createContinuousSpaceFactory(null);
-		//Randomly scatter particles in space
-		ContinuousSpace < Particle > space =
-		spaceFactory.createContinuousSpace("space", context, new RandomCartesianAdder<Particle>(), new repast.simphony.space.continuous.StickyBorders(), Particle.WIDTH, Particle.WIDTH, Particle.WIDTH);
-		
+		ContinuousSpace < Particle > space;
+		if(Particle.LOAD_AGENTS)
+		{
+			//Load particles from 'initAgents.txt' CSV
+			space = spaceFactory.createContinuousSpace("space", context, new TextFileAdder<Particle>(Particle.AGENTS_PATH), new repast.simphony.space.continuous.StickyBorders(), Particle.WIDTH, Particle.WIDTH, Particle.WIDTH);
+		}
+		else
+		{
+			//Randomly scatter particles
+			space = spaceFactory.createContinuousSpace("space", context, new RandomCartesianAdder<Particle>(), new repast.simphony.space.continuous.StickyBorders(), Particle.WIDTH, Particle.WIDTH, Particle.WIDTH);
+			
+		}
 		//Calculate grid dimensions
 		GridFactory gridFactory = GridFactoryFinder.createGridFactory(null);
 		Grid<Particle> grid = gridFactory.createGrid("grid", context, new GridBuilderParameters<Particle>(new repast.simphony.space.grid.StickyBorders(), new SimpleGridAdder<Particle>(), true , (int)Particle.GRID_DIM , (int)Particle.GRID_DIM, (int)Particle.GRID_DIM));
-		int zombieCount = (int)(Math.pow(Particle.WIDTH, Particle.DIMENSIONS) * (double)Particle.DENSITY);
+		int zombieCount = (int)Math.round((float)(Math.pow(Particle.WIDTH, Particle.DIMENSIONS) * Particle.DENSITY));
 		//Create particles
 		List<Particle> particleList = new ArrayList<Particle>();
 		for ( int i = 0; i < zombieCount ; i ++) {
@@ -47,15 +53,10 @@ public class ParticleBuilder implements ContextBuilder {
 		//Place them into grid
 		for (Particle obj : particleList) {
 			NdPoint pt = space.getLocation(obj);
-			grid.moveTo(obj, 
-					(int)Math.max(0, Math.min(Particle.GRID_DIM-1, Math.floor(pt.getX()*Particle.GRID_DIM/Particle.WIDTH))), 
-					(int)Math.max(0, Math.min(Particle.GRID_DIM-1, Math.floor(pt.getY()*Particle.GRID_DIM/Particle.WIDTH))),
-					(int)Math.max(0, Math.min(Particle.GRID_DIM-1, Math.floor(pt.getZ()*Particle.GRID_DIM/Particle.WIDTH)))
-					);
+			grid.moveTo(obj, (int)(pt.getX()/Particle.INTERACTION_RADIUS2),(int)(pt.getY()/Particle.INTERACTION_RADIUS2),(int)(pt.getZ()/Particle.INTERACTION_RADIUS2));
 			obj.init();
 		}
 		context.add(new ParticleUpdater(particleList));
-
 		return context ;
 
 	}
