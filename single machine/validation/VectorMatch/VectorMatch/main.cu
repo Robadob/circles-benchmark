@@ -47,21 +47,27 @@ int main(int argc, char** argv)
 			printf("File lengths do not match: %d vs %d\n", length1, length2);
 			return 1;
 		}
-		//Sort both using GPU
-		//if (argc>=4)
-		//{
-		//	printf("Using CUDA device %d\n", atoi(argv[3]));
-		//	cudaSetDevice(atoi(argv[3]));
-		//}
-		//glm::vec3 *d_vecs = 0;
-		//cudaMalloc(&d_vecs, length1*sizeof(glm::vec3));
-		//cudaMemcpy(d_vecs, vecs1, length1*sizeof(glm::vec3), cudaMemcpyHostToDevice);
-		//thrust::sort(thrust::cuda::par, d_vecs, d_vecs + length1, vecCompare());
-		//cudaMemcpy(vecs1, d_vecs, length1*sizeof(glm::vec3), cudaMemcpyDeviceToHost);
-		//cudaMemcpy(d_vecs, vecs2, length1*sizeof(glm::vec3), cudaMemcpyHostToDevice);
-		//thrust::sort(thrust::cuda::par, d_vecs, d_vecs + length1, vecCompare());
-		//cudaMemcpy(vecs2, d_vecs, length1*sizeof(glm::vec3), cudaMemcpyDeviceToHost);
-		//cudaFree(d_vecs);
+        {
+            //Sort both using GPU
+            if (argc>=4)
+            {
+            	printf("Using CUDA device %d\n", atoi(argv[3]));
+            	cudaSetDevice(atoi(argv[3]));
+            }
+            glm::vec3 *d_vecs = nullptr;
+            cudaMalloc(&d_vecs, length1*sizeof(glm::vec3));
+            cudaMemcpy(d_vecs, vecs1, length1*sizeof(glm::vec3), cudaMemcpyHostToDevice);
+            thrust::sort(thrust::cuda::par, d_vecs, d_vecs + length1, vecCompare());
+            cudaMemcpy(vecs1, d_vecs, length1*sizeof(glm::vec3), cudaMemcpyDeviceToHost);
+            cudaMemcpy(d_vecs, vecs2, length1*sizeof(glm::vec3), cudaMemcpyHostToDevice);
+            thrust::sort(thrust::cuda::par, d_vecs, d_vecs + length1, vecCompare());
+            cudaMemcpy(vecs2, d_vecs, length1*sizeof(glm::vec3), cudaMemcpyDeviceToHost);
+            cudaFree(d_vecs); 
+		}
+        //Allocate storage for mismatches
+        glm::vec3 *mismatchA = (glm::vec3 *)malloc(length1*sizeof(glm::vec3));
+        glm::vec3 *mismatchB = (glm::vec3 *)malloc(length1*sizeof(glm::vec3));
+        unsigned int mismatchCt = 0;
 		//Compare both on CPU
 		int j = 0;
 		float minLength = FLT_MAX;
@@ -70,22 +76,65 @@ int main(int argc, char** argv)
 		int maxId = -1;
 		for (int i = 0; i < length1;i++)
 		{
-			printf("(%.9g,%.9g,%.9g)==(%.9g,%.9g,%.9g)\n", vecs1[i].x, vecs1[i].y, vecs1[i].z, vecs2[i].x, vecs2[i].y, vecs2[i].z);
+			//printf("(%.9g,%.9g,%.9g)==(%.9g,%.9g,%.9g)\n", vecs1[i].x, vecs1[i].y, vecs1[i].z, vecs2[i].x, vecs2[i].y, vecs2[i].z);
 
 			auto ret = glm::epsilonEqual(vecs1[i], vecs2[i], 1.0f);
 			if (ret.x&&ret.y&&ret.z)
 			{
+
 				j++;
 			}
+            else
+            {
+                //Reorder components
+                mismatchA[mismatchCt] = glm::vec3(vecs1[i].y, vecs1[i].x, vecs1[i].z);
+                mismatchB[mismatchCt] = glm::vec3(vecs2[i].y, vecs2[i].x, vecs2[i].z);
+                mismatchCt++;
+            }
 			float len = glm::length(vecs1[i] - vecs2[i]);
 			minLength = len < minLength ? len : minLength;
 			maxId = maxLength < len ? i : maxId;
 			maxLength = maxLength < len ? len : maxLength;
 			meanLength += len / length1;
 		}
-		printf("%d/%d Successful matches!\n", j, length1);
-		printf("Min diff: %f\nMax diff: %f (%d)\nMean diff:%f\n", minLength, maxLength, maxId, meanLength);
-		printf("(%.9g,%.9g,%.9g)==(%.9g,%.9g,%.9g)\n", vecs1[maxId].x, vecs1[maxId].y, vecs1[maxId].z, vecs2[maxId].x, vecs2[maxId].y, vecs2[maxId].z);
+		//printf("%d/%d Successful matches!\n", j, length1);
+		//printf("Min diff: %f\nMax diff: %f (%d)\nMean diff:%f\n", minLength, maxLength, maxId, meanLength);
+		//printf("(%.9g,%.9g,%.9g)==(%.9g,%.9g,%.9g)\n", vecs1[maxId].x, vecs1[maxId].y, vecs1[maxId].z, vecs2[maxId].x, vecs2[maxId].y, vecs2[maxId].z);
+
+        if (j!=length1)
+        {//If first sort failed, resort the mismatched vectors
+            glm::vec3 *d_vecs = nullptr;
+            cudaMalloc(&d_vecs, mismatchCt*sizeof(glm::vec3));
+            cudaMemcpy(d_vecs, mismatchA, mismatchCt*sizeof(glm::vec3), cudaMemcpyHostToDevice);
+            thrust::sort(thrust::cuda::par, d_vecs, d_vecs + mismatchCt, vecCompare());
+            cudaMemcpy(mismatchA, d_vecs, mismatchCt*sizeof(glm::vec3), cudaMemcpyDeviceToHost);
+            cudaMemcpy(d_vecs, mismatchB, mismatchCt*sizeof(glm::vec3), cudaMemcpyHostToDevice);
+            thrust::sort(thrust::cuda::par, d_vecs, d_vecs + mismatchCt, vecCompare());
+            cudaMemcpy(mismatchB, d_vecs, mismatchCt*sizeof(glm::vec3), cudaMemcpyDeviceToHost);
+            cudaFree(d_vecs);
+            //Re match remainders
+            minLength = FLT_MAX;
+            maxLength = 0;
+            meanLength = 0;
+            maxId = -1;
+            for (int i = 0; i < mismatchCt; i++)
+            {
+                auto ret = glm::epsilonEqual(mismatchA[i], mismatchB[i], 1.0f);
+                if (ret.x&&ret.y&&ret.z)
+                {
+                    j++;
+                }
+                float len = glm::length(mismatchA[i] - mismatchB[i]);
+                minLength = len < minLength ? len : minLength;
+                maxId = maxLength < len ? i : maxId;
+                maxLength = maxLength < len ? len : maxLength;
+                meanLength += len / length1;
+            }
+            //printf("----------\n");
+            printf("%d/%d Successful matches!\n", j, length1);
+            printf("Min diff: %f\nMax diff: %f\nMean diff:%f\n", minLength, maxLength, meanLength);
+            printf("(%.9g,%.9g,%.9g)==(%.9g,%.9g,%.9g)\n", vecs1[maxId].x, vecs1[maxId].y, vecs1[maxId].z, vecs2[maxId].x, vecs2[maxId].y, vecs2[maxId].z);
+        }
 	}
 	else
 	{
